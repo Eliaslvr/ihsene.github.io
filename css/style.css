@@ -129,3 +129,27 @@ footer {
         width: 100%;
     }
 }
+
+@media only screen and (max-width: 480px) {
+    .blockMain img {
+        width: 150px;
+        height: 150px;
+        object-fit: cover;
+    }
+
+    .blockParfum {
+        width: 90%;
+    }
+
+    .blockModele {
+        width: 100%;
+    }
+
+    .modele {
+        width: 100%;
+    }
+
+    .modele img {
+        width: 100%;
+    }
+}
