@@ -27,6 +27,10 @@
     margin-top: 60px;
 }
 
+.line {
+    border-top: 13px solid #e0e6f5;
+}
+
 .title {
     text-align: center;
 }
@@ -94,7 +98,6 @@
 
 footer {
     background-color: black;
-    color: white;
     margin-top: 40px;
     height: 350px;
 }
@@ -104,16 +107,22 @@ footer {
     flex-direction: column;
     align-items: center;
     padding-top: 50px;
+    color: white;
 }
 .footerReseauxTitle {
     font-size: 26px;
     padding: 5px;
     border-radius: 14px;
     margin-bottom: 15px;
+    color: white;
 }
 .footerReseaux ul {
     list-style-type: none;
     font-size: 22px;
+}
+
+.footerReseaux i {
+    color: white;
 }
 
 .footerInformation {
@@ -126,9 +135,17 @@ footer {
     padding: 5px;
     border-radius: 14px;
     margin: 30px 0 15px;
+    color: white;
+}
+.footerInformationTitle p {
+    color: white;
 }
 .footerInformation ul {
     font-size: 12px;
+}
+
+.white {
+    color: white;
 }
 
 @media only screen and (max-width: 768px) {
@@ -191,7 +208,11 @@ footer {
     }
 
     .firstBlockParfum h2 {
-        font-size: 20px;
+        font-size: 15px;
+    }
+
+    .blockInfo {
+        width: 142px;
     }
 }
 
