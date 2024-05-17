@@ -2,7 +2,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family : 'Raleway', sans-serif ;
+    /* font-family: Montserrat; */
+    font-family: "Cinzel", serif;
     color: black;
 }
 
@@ -43,10 +44,14 @@
     text-align: center;
 }
 
+.h2size {
+    font-size: 16px;
+}
+
 .firstBlockParfum {
     display: flex;
     flex-wrap: wrap;
-    width: 90%;
+    width: 74%;
     margin: 70px auto 0;
     justify-content: space-around;
     text-align: center;
