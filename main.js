@@ -1,3 +1,13 @@
+document.addEventListener('DOMContentLoaded', function() {
+    const icon = document.querySelector('.iconDeroulant');
+    const deroulant = document.querySelector('.deroulant');
+
+    icon.addEventListener('click', function() {
+        deroulant.classList.toggle('visible');
+    });
+});
+
+
 function fetchElement() {
     fetch('lol.json')
     .then(response => response.json())
