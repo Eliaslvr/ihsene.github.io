@@ -26,17 +26,45 @@
     padding-bottom: 5px;
 }
 
-.deroulant {
+/* .deroulant {
     display: none;
 }
 
 .deroulant.visible {
     display: flex;
-    /* justify-content: space-around; */
     font-size: 23px;
     padding: 8px;
     font-weight: 500;
+} */
+
+.deroulant {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0s ease-out;
+    display: flex; /* Ou block si vous préférez */
+    padding: 0; /* Pas de padding initial */
+    font-weight: 500;
+    transform: scaleY(0);
 }
+
+.deroulant.visible {
+    max-height: 500px; /* Ajustez selon le contenu pour permettre un défilement complet */
+    padding: 8px; 
+    transform: scaleY(1); /* Final scale for the animation */
+    animation: scale-up-top 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+
+@keyframes scale-up-top {
+    0% {
+        transform: scaleY(0);
+        transform-origin: top;
+    }
+    100% {
+        transform: scaleY(1);
+        transform-origin: top;
+    }
+}
+
 
 .center {
     width: 50%;
@@ -204,6 +232,11 @@ footer {
 }
 
 @media only screen and (max-width: 480px) {
+    .deroulant.visible {
+        text-shadow : 4px 4px 2px rgba(0,0,0,0.6);
+        font-size: 15px;
+    }
+
     .blockMain img {
         width: 140px;
         height: 140px;
@@ -233,6 +266,10 @@ footer {
 
     .block {
         margin: 50px 0;
+    }
+
+    .firstBlockParfum {
+        width: 100%;
     }
 
     .firstBlockParfum h2 {
@@ -295,4 +332,10 @@ footer {
 
 .descriptionGrey {
     font-weight: 300;
+}
+
+@media only screen and (max-width: 480px) {
+    .block {
+        margin-left: 0;
+    }
 }
